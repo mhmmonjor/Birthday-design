@@ -6,6 +6,7 @@ const startBtn = document.getElementById("startBtn");
 const nameBox = document.getElementById("nameBox");
 const birthdayName = document.getElementById("birthdayName");
 
+const shareBox = document.getElementById("shareBox");
 const copyBtn = document.getElementById("copyBtn");
 const copyMessage = document.getElementById("copyMessage");
 
@@ -101,8 +102,8 @@ startBtn.addEventListener("click", () => {
   // Birthday শুরু
   startBirthday(name);
 
-  // Copy button দেখাবে
-  copyBtn.style.display = "block";
+  // Copy section দেখাবে
+  shareBox.style.display = "flex";
 });
 
 

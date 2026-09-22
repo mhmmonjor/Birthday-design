@@ -5,75 +5,142 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <title>Happy Birthday </title>
+    <title>Happy Birthday</title>
 
     <link rel="stylesheet" href="css/style.css">
 </head>
 
 <body>
+
     <div class="card">
+
         <!-- Confetti -->
         <div class="confetti" id="confetti"></div>
-        <!-- Cake -->
+
+
+        <!-- =========================
+             CAKE
+        ========================== -->
+
         <div class="cake-area">
+
             <div class="cake">
+
                 <!-- Bottom Cake -->
                 <div class="layer layer-1">
+
                     <div class="icing"></div>
+
                     <div class="cream c1"></div>
                     <div class="cream c2"></div>
+
                     <div class="cherry ch1"></div>
                     <div class="cherry ch2"></div>
+
                 </div>
+
 
                 <!-- Middle Cake -->
                 <div class="layer layer-2">
+
                     <div class="icing"></div>
+
                     <div class="cream c3"></div>
                     <div class="cream c4"></div>
+
                     <div class="cherry ch3"></div>
                     <div class="cherry ch4"></div>
+
                 </div>
+
+
                 <!-- Top Cake -->
                 <div class="layer layer-3">
+
                     <div class="icing"></div>
 
                     <div class="cream c5"></div>
+
                     <div class="cherry ch5"></div>
+
                 </div>
+
+
                 <!-- Candle -->
                 <div class="candle-wrap">
+
                     <div class="flame"></div>
+
                     <div class="candle"></div>
+
                 </div>
+
             </div>
+
         </div>
-        <!-- Birthday Text -->
+
+
+        <!-- =========================
+             BIRTHDAY TEXT
+        ========================== -->
+
         <div class="birthday-text">
+
             <div class="happy">
                 Happy Birthday
             </div>
+
+
+            <!-- Name Input -->
             <div class="name-box" id="nameBox">
-                <input type="text" id="nameInput" placeholder="Enter Name" maxlength="20" />
+
+                <input
+                    type="text"
+                    id="nameInput"
+                    placeholder="Enter Name"
+                    maxlength="20"
+                />
 
                 <button id="startBtn">
                     Create Birthday 🎂
                 </button>
 
-                <button id="copyBtn" style="display: none;">
+            </div>
+
+
+            <!-- Copy Link -->
+            <div
+                class="share-box"
+                id="shareBox"
+                style="display: none;"
+            >
+
+                <button id="copyBtn">
                     🔗 Copy Birthday Link
                 </button>
 
                 <p id="copyMessage"></p>
+
             </div>
 
-            <div class="love" id="birthdayName"></div>
+
+            <!-- Birthday Name -->
+            <div
+                class="love"
+                id="birthdayName"
+            ></div>
+
         </div>
+
+
         <!-- Replay -->
         <button id="replay">
             ↻ Replay
         </button>
+
     </div>
+
+
     <script src="js/script.js"></script>
 
 </body>
